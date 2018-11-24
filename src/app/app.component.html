@@ -1,13 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
+  <app-messages></app-messages>
   <h1>
     {{ title }}
   </h1>
   <img width="500" alt="Angular Logo" src="http://mademoisellecordelia.fr/wp-content/uploads/2014/08/ob_6165cf_super-heros-fat.png">
 </div>
 
-<app-heroes></app-heroes>
-<app-messages></app-messages>
+<router-outlet></router-outlet>
+
 
 <h2>Liens utiles : </h2>
 <ul>
@@ -16,8 +17,14 @@
   </li>
   <li>
     <h2><a target="_blank" rel="noopener" href="https://github.com/Arcony/Angular-Tower"> Git Hub </a></h2>
+   <li><h2><a routerLink="/dashboard">Dashboard </a></h2>
   </li>
-  
+    <li><h2><a routerLink="/heroes">Heroes</a></h2>
+  </li>
+
+
+
+
 </ul>
 
 <router-outlet></router-outlet>
